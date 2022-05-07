@@ -2,7 +2,7 @@
 
 const factorPrimo = () => {
   let numeroPrimo = 0;
-    let numero = 600851475143;
+  let numero = 600851475143;
   for (let i = 2; i < numero / 2; i++) {
     if (numero % i === 0) {
       let resultadoDivision = numero / i;
@@ -14,3 +14,5 @@ const factorPrimo = () => {
 };
 
 factorPrimo();
+
+// El resultado es: 6857
