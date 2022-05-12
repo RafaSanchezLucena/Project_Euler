@@ -7,7 +7,7 @@ const calcPrimeNumber = () => {
   let num = 1;
   while (numeroPrimo != 1000000) {
     num++;
-    for (let i = 2; i <= num / 2; i++) {
+    for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
       if ((num % i === 0)) {
         contador = 1;
         break;
@@ -21,4 +21,4 @@ const calcPrimeNumber = () => {
 calcPrimeNumber();
 
 // El resultado es: 104743 en 1.015ms
-// El número primo un millón es: 
+// El número primo un millón es: 15485863
